@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran Workshop UI/UX Design With Figma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- DESKRIPSI EVENT -->
+<header>
+  <h1>UI/UX Design Workshop</h1>
+  <p>Designing User Experience with Figma</p>
+  <p>Workshop ini ditujukan untuk mahasiswa dan umum yang ingin memahami
+    dasar UI/UX Design menggunakan Figma, mulai dari perencanaan tampilan
+    hingga pembuatan prototype interaktif.</p>
+</header>
+
+<section class="container">
+
+ <!-- INFO EVENT -->
+ <section class="info-event">
+      <div>📅 26 Januari 2026</div>
+      <div>📍 STIKOM El Rahma</div>
+    </section>
+
+  <p class="note">
+    Pendaftaran akan ditutup otomatis jika kuota sudah terpenuhi.
+  </p>
+
+  <!-- FORM -->
+  <div id="bagianForm">
+    <h2>Form Pendaftaran</h2>
+
+    <form id="formDaftar">
+      <label>Nama Lengkap</label>
+      <input type="text" id="nama" placeholder="Nama Lengkap">
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Email">
+
+      <label>No HP</label>
+      <input type="number" id="nohp" placeholder="No HP (contoh: 085780977790)">
+
+      <label>Kategori Peserta</label>
+      <select id="kategori">
+        <option value="">-- Pilih --</option>
+        <option value="Mahasiswa">Mahasiswa</option>
+        <option value="Umum">Umum</option>
+      </select>
+
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+
+  <p id="pesan"></p>
+
+  <div class="kuota">
+    Sisa Kuota: <strong id="sisaKuota">50</strong>
+  </div>
+
+  <h2>Daftar Peserta</h2>
+  <div id="listPeserta"></div>
+
+</section>
+
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="logo-box">
+      <img src="logo-stikom-elrahma.png" alt="Logo Kampus">
+    </div>
+    <p>© 2026 UI/UX Design Workshop</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
